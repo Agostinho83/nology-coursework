@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Tahoma, verdana, sans-serif
+}
+
+*::selection {
+    color: white;
+    background-color: rgb(80, 22, 236);
+}
+
+.body {
+    background-color: white;
+    max-width: 1400px;
+    margin: auto;
+}
+
+header {
+    text-align: center;
+    height: 80px;
+    padding: 40px;
+    color: rgb(94, 92, 89);
+}
+
+header h1 {
+    font-size: 40px;
+}
+
+.card-k {
+    display: flex;
+    justify-content: center;
+}
+
+.card-p {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 70px;
+}
+
+.card-m {
+    float: right;
+    padding-top: 50px;
+    margin-right: 175px;
+}
+
+.span__card {
+    width: 50%;
+    height: 50px;
+    float: right;
+    margin-top: -50px;
+    border-left: 4px solid lightslategray;
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+}
+
+.span__card-peter {
+    width: 29%;
+    height: 70px;
+    float: right;
+    margin-left: 300px;
+    border-left: 4px solid lightslategray;
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+}
+
+.vl {
+    border-left: 4px solid lightslategray;
+    height: 70px;
+    position: absolute;
+    left: 30%;
+    margin-bottom: 500px;
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+}
+
+.card {
+    width: 300px;
+    height: auto;
+    border: 1px solid gray;
+    border-radius: 5px;
+    text-align: center;
+    padding: 5px;
+    background-color: white;
+    color: midnightblue;
+    box-shadow: 5px 5px 5px 5px lightslategray;
+    margin-left: 10px;
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+}
+
+.card:hover {
+    opacity: 1;
+}
+
+.card img {
+    margin: 10px;
+    min-height: 300px;
+    border-radius: 30px;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-decoration: underline;
+    font-size: 30px;
+}
+
+#penelope-list {
+    list-style-type: none;
+}
+
+li:hover {
+    color: rgb(58, 170, 240);
+}
+
+span {
+    font-size: 1.5em;
+    color: #b48ce0;
+}
+
+footer .arrow-up i {
+    margin-bottom: 30px;
+    width: 250px;
+    float: right;
+    cursor: pointer;
+    padding-top: 490px;
+}
+
+footer .arrow-up i {
+    font-size: 80px;
+    color: rgb(95, 10, 233);
+}
+
+footer .arrow-up i:hover {
+    color: rgb(123, 240, 123);
+}
+
+i {
+    color: red;
+}
