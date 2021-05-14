@@ -1,0 +1,32 @@
+.france {
+    width: 200px;
+    height: 100px;
+    border: rgb(13, 14, 13) solid 2px;
+    font-size: 20px;
+    background-image: url(./img/frança.png);
+}
+
+.france:hover {
+    cursor: pointer;
+    background-image: url(./img/irish.png);
+}
+
+.flex-container {
+    height: 1OOHV;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.germany {
+    width: 200px;
+    height: 100px;
+    border: rgb(13, 14, 13) solid 2px;
+    font-size: 20px;
+    margin-top: 10px;
+    background-image: url(./img/images.png);
+}
+
+.germany:hover {
+    cursor: pointer;
+    background-image: url(./img/hungria.png);
+}
