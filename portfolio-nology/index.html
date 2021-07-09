@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio-T.A</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Styles.css">
+</head>
+
+<body>
+    <!-- ** Loader ** -->
+    <div class="loader-wrapper" id="loader-wrapper">
+        <div class="loader"></div>
+    </div>
+    <!-- ** Top button ** -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    <!--------------------Navigation-------------------->
+
+    <nav class="navigation">
+        <div class="container">
+            <div class="navigation__left">
+                <div class="logo">
+                    <a href="index.html"><img src="./img/logo1.png" alt=""></a>
+                </div>
+            </div>
+            <!-- end .navigation-left -->
+
+            <div class="navigation__right">
+                <a href="#" id="mobile-menu-trigger" class="navigation__right_mobile-menu-trigger"><i class="fas fa-bars"></i></a>
+                <ul class="nav-link">
+                    <li class="nav-link__item">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="nav-link__item">
+                        <a href="#About">About</a>
+                    </li>
+                    <li class="nav-link__item">
+                        <a href="#Portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-link__item">
+                        <a href="#Hobbies">Hobbies</a>
+                    </li>
+                    <li class="nav-link__item">
+                        <a href="#References">References</a>
+                    </li>
+                    <li class="nav-link__item">
+                        <a href="#Contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- end .navigation-right -->
+        </div>
+        <!-- end .container -->
+    </nav>
+    <!-- end .navigation -->
+
+    <!--------------------Mobile menu-------------------->
+    <div class="mobile-menu-overlay" id="mobile-menu-overlay"></div>
+    <div class="mobile-menu" id="mobile-menu">
+        <a href="#" class="mobile-menu__close" id="mobile-menu-close">Close <i class="far fa-times-circle"></i></i></a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Portfolio">Portfolio</a></li>
+            <li><a href="#Hobbies">Hobbies</a></li>
+            <li><a href="#References">References</a></li>
+            <li><a href="#Contact">Contact</a></li>
+        </ul>
+    </div>
+    <!-- end .mobile-menu -->
+
+    <!--------------------Header-------------------->
+
+    <header class="header">
+        <div class="container">
+            <div class="header__intro">
+                <h6>Welcome to my website</h6>
+                <h1>Software Developer</h1>
+                <a href="#About" class="btn">Find out more</a>
+            </div>
+        </div>
+        <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none"><path fill="#E9896A" fill-opacity="1" d="M0,96L60,90.7C120,85,240,75,360,106.7C480,139,600,213,720,224C840,235,960,181,1080,170.7C1200,160,1320,192,1380,208L1440,224L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+    </header>
+
+    <!-- end .header -->
+
+    <!--------------------History-------------------->
+    <main class="main">
+
+
+        <section class="section-history" id="About">
+
+            <div class="section-history__heading">
+                <h2>About me</h2>
+            </div>
+            <div class="container">
+                <div class="profile-image">
+                    <img class="profile-image__img" src="./img/Profile.jpg" alt="">
+                    <div class="profile-image__link">
+                        <a href="#"><i class="fab fa-instagram-square"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="profile__content">
+
+                    <h5> Hi, thanks for visiting my site.</h5>
+
+                    <p> I am a realiable profissional, self-motivated and committed with a flexible attitude to work.</p>
+
+                    <p> Hard worker with 6 years' experience in an Accounts Department for a large company.</p>
+
+                    <p> I also have:</p>
+
+                    <p>=> Graphic Design skills and have done different projects.</p>
+
+                    <p>=> Software development skills</p>
+
+                    <p>- HTML css</p>
+
+                    <p>- Flexbox</p>
+
+                    <p>- JavaScript</p>
+
+                    <p>- Architecture</p>
+
+                    <p>- Networks and Testing</p>
+
+                    <p>- Web interactivity</p>
+
+                </div>
+
+            </div>
+
+        </section>
+        <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#E9896A" fill-opacity="1" d="M0,96L60,90.7C120,85,240,75,360,106.7C480,139,600,213,720,224C840,235,960,181,1080,170.7C1200,160,1320,192,1380,208L1440,224L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>
+
+
+        <!--------------------History-Skils-------------------->
+        <section class="skills" id="skills">
+            <div class="skills__heading">
+                <h2>skills</h2>
+            </div>
+            <div class="container">
+                <div class="skills__boxes">
+                    <div class="skills__boxes-icons"><i class="fab fa-html5" style="color: #4221C9;"></i></div>
+                    <h3>HTML</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc neque lectus, pulvinar eu consectetur ut, vulputate vel massa. Nulla volutpat ultricies tortor, sed sodales purus viverra quis. Etiam imperdiet diam nisl, a feugiat tellus
+                        consectetur eget. </p>
+                </div>
+                <div class="skills__boxes">
+                    <div class="skills__boxes-icons"><i class="fab fa-js-square" style="color: #784E0E;"></i></div>
+                    <h3>JavaScript</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc neque lectus, pulvinar eu consectetur ut, vulputate vel massa. Nulla volutpat ultricies tortor, sed sodales purus viverra quis. Etiam imperdiet diam nisl, a feugiat tellus
+                        consectetur eget. </p>
+                </div>
+                <div class="skills__boxes">
+                    <div class="skills__boxes-icons"><i class="fab fa-css3-alt" style="color: #175C66;"></i></div>
+                    <h3>CSS</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc neque lectus, pulvinar eu consectetur ut, vulputate vel massa. Nulla volutpat ultricies tortor, sed sodales purus viverra quis. Etiam imperdiet diam nisl, a feugiat tellus
+                        consectetur eget. </p>
+                </div>
+            </div>
+        </section>
+        <!--------------------Portfolio-------------------->
+
+        <section class="section-portfolio" id="Portfolio">
+
+            <div class="section-portfolio__heading">
+                <h2>Portfolio</h2>
+            </div>
+            <div class="portfolio-item">
+                <div class="portfolio-item__left portfolio-item__left--Graphic">
+                    <div class="portfolio-item__left-img portfolio-item--Graphic">
+                        <img src="./img/Portfolio3.png" alt="" class="portfolio-item__left-img__image">
+                        <a href="#"><span>View project</span></a>
+                        <h4>Graphic Design</h4>
+                        <div class="divider divider-centered"></div>
+
+                        <p>This is a project was built using:
+                        </p>
+                        <ul id="portfolio-list">
+                            <li>Canva tool</li>
+                            <li>Figma tool</li>
+                            <li>PDF</li>
+                            <li>Font Awesome</li>
+                            <li>Google Fonts</li>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <div class="portfolio-item__right portfolio-item__right--Web">
+
+                    <div class="portfolio-item__right-img portfolio-item__right--Web">
+                        <h4>Webdevelopment</h4>
+                        <div class="divider divider-centered"></div>
+                        <p>This is a project was built using:
+                        </p>
+                        <ul id="portfolio-list">
+                            <li>Javascript</li>
+                            <li>CSS</li>
+                            <li>SCSS</li>
+                            <li>HTML</li>
+                            <li>Architecture</li>
+                        </ul>
+                        <img src="./img/portfolio2.jfif" alt="" class="portfolio-item__right-img__image">
+                        <a href="#"><span>View project</span></a>
+                    </div>
+
+                </div>
+            </div>
+            <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none"><path fill="#E9896A" fill-opacity="1" d="M0,96L60,90.7C120,85,240,75,360,106.7C480,139,600,213,720,224C840,235,960,181,1080,170.7C1200,160,1320,192,1380,208L1440,224L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+        </section>
+
+        <!--------------------Hobbies-------------------->
+
+
+        <section class="hobbies" id="Hobbies">
+
+            <div class="hobbies__heading">
+                <h2>Hobbies</h2>
+            </div>
+            <div class="hobbies-items">
+
+                <div class="hobbies-item">
+                    <img src="./img/Football.jpg" class="hobbies-item__image" style="width: 500px; height: 300px;">
+                    <div class="overlay">
+                        Playing Football
+                    </div>
+                </div>
+
+                <div class="hobbies-item">
+                    <img src="./img/Travelling-Turkey1.jpg" class="hobbies-item__image" style="width: 500px; height: 300px;">
+                    <div class="overlay">
+                        Travelling-Turkey
+                    </div>
+                </div>
+
+                <div class="hobbies-item">
+                    <img src="./img/Travelling-Monaco.jpg" class="hobbies-item__image" style="width: 500px; height: 300px;">
+                    <div class="overlay">
+                        Travelling-Monaco
+                    </div>
+                </div>
+
+                <div class="hobbies-item">
+                    <img src="./img/writing.jpg" class="hobbies-item__image" style="width: 500px; height: 300px;">
+                    <div class="overlay">
+                        Writing
+                    </div>
+                </div>
+
+                <div class="hobbies-item">
+                    <img src="./img/reading.jpg" class="hobbies-item__image" style="width: 500px; height: 300px;">
+                    <div class="overlay">
+                        Reading
+                    </div>
+                </div>
+
+                <div class="hobbies-item">
+                    <img src="./img/chess.jpg" class="hobbies-item__image" style="width: 500px; height: 300px;">
+
+                    <div class="overlay">
+                        Playing chess
+                    </div>
+                </div>
+            </div>
+        </section>
+        <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#E9896A" fill-opacity="1" d="M0,96L60,90.7C120,85,240,75,360,106.7C480,139,600,213,720,224C840,235,960,181,1080,170.7C1200,160,1320,192,1380,208L1440,224L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>
+
+        <!--------------------References-------------------->
+
+        <section class="references" style="padding: 30px;" id="References">
+            <div class="references__heading">
+                <h2>
+                    References
+                </h2>
+            </div>
+            <blockquote class="text-quote">
+                <p>A professional with focus on his daily tasks. He has worked with our senior finance team to help them to prepare the accounts and book-keeping, managing petty cash and developing spread sheets and updating website for two years. As a part
+                    of his job role, he prepare accounts He has very good skill in accounts management and record keeping. He has done Varity of duties during his role in the college and he has worked with senior assessors and quality assurance team to
+                    demonstrate his professional skills in supporting teaching environment. He is very dedicated and honest in his job and skills training.
+                </p>
+                <footer class="text-quote__footer"> Chairman <cite title="Source Title">SEEDS Foundation</cite>
+                </footer>
+            </blockquote>
+
+        </section>
+        <!--------------------Contact-------------------->
+        <section class="contact" id="Contact">
+            <div class="contact__heading">
+                <h2>Available for opportunity</h2>
+            </div>
+            <div class="container">
+                <div class="leftpanel">
+                    <div class="card">
+                        <p>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Nottingham, England</span><br><br>
+                        </p>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2403.7853087208587!2d-1.154338384176373!3d52.95228597989838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4879c22afa210fe5%3A0x2e0e6a269fa170fb!2sAnglo%20Skills%20College!5e0!3m2!1spt-PT!2suk!4v1624953163754!5m2!1spt-PT!2suk"
+                            width="550" height="385" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+                <div class="rightpanel">
+
+                    <form class="rightpanel__form-quote">
+                        <h3>Get in touch</h3>
+                        <p>Please drop a message if you would like to find out more about me. I always aim to reply within 24 hours.</p>
+                        <div>
+                            <label>Name</label><br>
+                            <input type="text" placeholder="Name">
+                        </div>
+                        <div>
+                            <label>Email</label><br>
+                            <input type="Email" placeholder="Email Address">
+                        </div>
+                        <div>
+                            <label>Message</label><br>
+                            <textarea class="rightpanel__textarea" placeholder="Message"></textarea>
+                        </div>
+                        <button class="button_btn" type="submit">Send</button>
+                    </form>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <!--------------------Footer-------------------->
+
+    <footer class="section-footer">
+
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-4 col-xs-6 segment-one md-mb-30 sm-mb-30">
+                        <h3>T.A-DEV</h3>
+
+                        <p>I am a realiable profissional, self-motivated and committed with a flexible attitude to work. </p>
+                        <p> Hard worker with 6 years' experience in an Accounts Department for a large company.</p>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-6 segment-two md-mb-30 sm-mb-30">
+                        <h2>Useful link</h2>
+                        <ul>
+                            <li>
+                                <a href="#index.html">Home</a></li>
+                            <li>
+                                <a href="#About">About</a></li>
+                            <li>
+                                <a href="#Portfolio">Portfolio</a></li>
+                            <li>
+                                <a href="#Hobbies">Hobbies</a></li>
+                            <li>
+                                <a href="#References">References</a></li>
+                            <li>
+                                <a href="#Contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-6 segment-three  sm-mb-30">
+                        <h2>Find me</h2>
+                        <ul class="list-unstyled">
+                            <li class="my-2"><i class="fas fa-home mr-3"></i>NG1-Nottingham City</li>
+                            <li class="my-2"><i class="fas fa-envelope mr-3"></i>telmoa83@outlook.pt</li>
+                            <li class="my-2"><i class="fas fa-phone mr-3"></i>+44780000000000</li>
+                            <li class="my-2"><i class="fas fa-print mr-3"></i>+44780000000000</li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        <p class="footer-bottom-text">All Right reserved by &copy;T.A-DEV.2021</p>
+    </footer>
+    <script src="index.js"></script>
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</body>
+
+</html>
