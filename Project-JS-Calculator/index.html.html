@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet " href="https://use.fontawesome.com/releases/v5.8.1/css/all.css ">
+
+</head>
+
+<body onload="init();">
+    <!--onload="init();"-->
+    <!-----------------------------HEADER------------------------------------------------->
+    <header class="navigation">
+        <div class="left-side">
+            <a href="two2.html" class="logo">T.A.Developer </a></div>
+        <div class="right-side">
+            <div class="navigation-link">
+                <a href="sign Up.html" class="bttn"><span class="fas fa-user"></span>Sign Up</a>
+            </div>
+            <div class="navigation-link">
+                <a href="Log in.html" class="bttn"><span class="fas fa-sign-in-alt"></span>Log in</a>
+            </div>
+
+        </div>
+    </header>
+    <!-----------------------------NAVBAR------------------------------------------------->
+    <nav>
+        <ul>
+            <li><a href="# "><i class="fab fa-facebook-f "></i><span>Facebook</span></a></li>
+            <li><a href="# "><i class="fab fa-twitter "></i><span>Twitter</span></a></li>
+            <li><a href="# "><i class="fab fa-instagram "></i><span>Instagram</span></a></li>
+            <li><a href="# "><i class="fab fa-linkedin-in "></i><span>Linkedin</span></a></li>
+            <li><a href="# "><i class="fab fa-github "></i><span>Github</span></a></li>
+            <li><a href="# "><i class="fab fa-youtube "></i><span>Youtube</span></a></li>
+        </ul>
+    </nav>
+    <!-----------------------------CALCULATOR------------------------------------------------->
+    <div id="calculator">
+        <input type="text" id="result">
+        <div class="keyboard">
+            <button id="clear" onclick="clr()">C</button>
+            <button id="del" onclick="del()">&larr;</button>
+            <button id="remainder" onclick="operation('%')">%</button>
+            <button id="divide" onclick="operation('/')">&#247;</button>
+            <button id="seven" onclick="calculate('7')">7</button>
+            <button id="eight" onclick="calculate('8')">8</button>
+            <button id="nine" onclick="calculate('9')">9</button>
+            <button id="multiply" onclick="operation('*')">*</button>
+            <button id="four" onclick="calculate('4')">4</button>
+            <button id="five" onclick="calculate('5')">5</button>
+            <button id="six" onclick="calculate('6')">6</button>
+            <button id="subtract" onclick="operation('-')">-</button>
+            <button id="one" onclick="calculate('1')">1</button>
+            <button id="two" onclick="calculate('2')">2</button>
+            <button id="three" onclick="calculate('3')">3</button>
+            <button id="add" onclick="operation('+')">+</button>
+            <button id="decimal" onclick="calculate('.')">.</button>
+            <button id="zero" onclick="calculate('0')">0</button>
+            <button id="raise" onclick="operation('^')">^</button>
+            <button id="equal" onclick="equal('=')">=</button>
+        </div>
+
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
