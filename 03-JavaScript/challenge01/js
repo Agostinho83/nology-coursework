@@ -1,0 +1,104 @@
+//if a name, is a coaches name, log "it´s a coach"
+const name = "Telmo";
+if (name == "Telmo") {
+    console.log("it´s a coach")
+}
+
+//if a greeting, is bonjour, log "comment ca va"
+const greeting = "bonjourno"
+if (greeting == "bonjour") {
+    console.log("comment ca va")
+}
+
+//if a score, reaches ten, log "you won the game"
+const score = 10;
+if (score == "10") {
+    console.log("Congratulation, you won!")
+}
+
+//if age, is grater than 65, "time to retire"
+let age = 50;
+if (age >= 65) {
+    console.log("Time to retire I´m afraid")
+}
+
+// if hasCovid, log "time to isolate", else "keep social distancing"
+const hasCovid = false;
+const isShielding = true;
+if (hasCovid || isShielding) {
+    console.log("time to isolate")
+
+} else {
+    console.log("keep social distancing")
+}
+
+// if age, greater than 18, and isBritish, "you can vote in the next election"
+const isBritish = true;
+age = 18
+if (age > 17 && isBritish) {
+    console.log("Have you registered to vote?")
+}
+
+
+
+function getCapitalcity(event) {
+    let capital = event.target.value;
+
+    capital = capital.toUpperCase();
+
+
+
+    if (capital == "Argentina") {
+        alert('Buenos Aires')
+
+    } else if (capital == "Australia") {
+        alert('Canberra')
+
+    } else if (capital == "Austria") {
+        alert('Vienna')
+
+    } else if (capital == "Angola") {
+        alert('Luanda')
+
+    } else if (capital == "Belgium") {
+        alert('Brussels')
+
+    } else if (capital == "Brazil") {
+        alert('Brasilia')
+
+    } else if (capital == "Canada") {
+        alert('Ottawa')
+
+    } else if (capital == "Cape verde") {
+        alert('Praia')
+
+    } else if (capital == "China") {
+        alert('Beijing')
+
+    } else if (capital == "Colombia") {
+        alert('Bogota')
+
+    } else if (capital == "Denmark") {
+        alert('Copenhagen')
+
+    } else if (capital == "Germany") {
+        alert('Berlin')
+
+    } else if (capital == "Hungary") {
+        alert('Budapest')
+
+    } else if (capital == "Italy") {
+        alert('Rome')
+
+    } else if (capital == "United Kingdom") {
+        alert('London')
+
+    } else if (capital == "Portugal") {
+        alert('Lisbon')
+
+    } else {
+        alert('not recognised')
+    }
+
+
+}

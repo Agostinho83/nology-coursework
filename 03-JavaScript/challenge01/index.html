@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <div>
+        <h1>Retirement Calculater</h1>
+        <input type="text" onblur="calculateyearsUntilRetirement(event)">
+    </div>
+    <div>
+        <h1>French Translater</h1>
+        <input type="text" onblur="getGreetingInFrench(event)">
+    </div>
+
+    <div>
+        <h1>Calculater - Multiply by 9</h1>
+        <input type="text" onblur="MultiplicationBy09(event)">
+    </div>
+    <div>
+        <h1>Calculater - DivideBy10</h1>
+        <input type="text" onblur="DivideBy10(event)">
+    </div>
+    <div>
+        <h1>Type the Country to get the Capital City</h1>
+        <input type="text" list="historic" onblur="getCityCountry(event)">
+        <datalist id="historic">
+            <option value="Argentina"></option>
+            <option value="Australia"></option>
+            <option value="Austria"></option>
+            <option value="Angola"></option>
+            <option value="Belgium"></option>
+            <option value="Brazil"></option>
+            <option value="Canada"></option>
+            <option value="Cape verde"></option>
+            <option value="China"></option>
+            <option value="Colombia"></option>
+            <option value="Denmark"></option>
+            <option value="Germany"></option>
+            <option value="Hungary"></option>
+            <option value="Italy"></option>
+            <option value="United Kingdom"></option>
+            <option value="Portugal"></option>
+        </datalist>
+    </div>
+
+</body>
+
+</html>

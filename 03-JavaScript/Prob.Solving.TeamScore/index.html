@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TeamScore</title>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="btn">
+        <button class="button-bt1" onclick=" handleTeamOneClick();">Liverpool</button>
+        <input class="input-text" type="text" value="0" id="inc" />
+    </div>
+
+    <div class="btn">
+        <button class="button-bt2" onclick=" handleTeamTwoClick();">Everton</button>
+        <input class="input-text" type="text" value="0" id="disc" />
+    </div>
+
+    <div class="score">
+        <div class="card-L">
+            <div class="Liverpool">
+                <h2>Liverpool</h2>
+            </div>
+            <form>
+                <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-</div>
+                <input type="number" id="number" value="0" />
+                <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+</div>
+            </form>
+        </div>
+
+        <div class="card-E">
+            <div class="Liverpool">
+                <h2>Everton</h2>
+            </div>
+            <form>
+                <div class="value-button" id="decrease" onclick="teamTwodecreaseValue()" value="Decrease Value">-</div>
+                <input type="number" id="num" value="0" />
+                <div class="value-button" id="increase" onclick="teamTwoincreaseValue()" value="Increase Value">+</div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

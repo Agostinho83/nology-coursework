@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UX Form Challenge</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <style>
+        * {
+            padding: 0;
+            box-sizing: border-box;
+            margin: 0;
+        }
+        
+        body {
+            font-family: "Roboto", sans-serif;
+            font-size: 16px;
+            line-height: 1.5;
+            color: #333;
+        }
+        
+        h1 {
+            font-size: 30px;
+            font-weight: 500;
+            font-family: "Poppins", sans-serif;
+            line-height: 1.2;
+            color: #E5F816;
+        }
+        
+        h2 {
+            font-size: 40px;
+            font-weight: 700;
+            font-family: "Poppins", sans-serif;
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+        
+        h3 {
+            font-size: 26px;
+            font-weight: 400;
+            font-family: "Poppins", sans-serif;
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+        
+        h4 {
+            font-size: 22px;
+            font-weight: 400;
+            font-family: "Poppins", sans-serif;
+            line-height: 1.2;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+        
+        h6 {
+            font-size: 48px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            color: #FB743E;
+        }
+        
+        h5 {
+            font-size: 26px;
+            font-weight: 400;
+            font-family: "Poppins", sans-serif;
+            line-height: 1.2;
+            margin-bottom: 20px;
+            color: #FFFFFF;
+        }
+        
+        .container {
+            max-width: 1200px;
+            padding: 0 15px;
+            margin: 0 auto;
+        }
+        /*--------------------Contact--------------------*/
+        
+        .contact {
+            min-height: 100vh;
+        }
+        
+        .contact__heading {
+            text-align: center;
+            height: 80px;
+            padding: 40px;
+            color: #5e5c59;
+        }
+        
+        @media (max-width: 768px) {
+            .contact__heading {
+                padding: 70px;
+            }
+        }
+        
+        .contact__heading h2 {
+            color: #10940E;
+            text-decoration: underline;
+            text-underline-position: below;
+            text-transform: uppercase;
+            text-align: center;
+        }
+        
+        .contact .container {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+            min-height: 80vh;
+            margin-top: 70px;
+        }
+        
+        @media (max-width: 768px) {
+            .contact .container {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-pack: start;
+                -ms-flex-pack: start;
+                justify-content: flex-start;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                flex-direction: column;
+            }
+        }
+        
+        .contact .container .leftpanel .card p {
+            color: #007bff;
+            font-size: 24px;
+            margin-bottom: 8px;
+            font-weight: 500;
+            line-height: 1.2;
+        }
+        
+        @media (max-width: 768px) {
+            .contact .container .leftpanel .card iframe {
+                float: none;
+                width: 453px;
+                height: 285px;
+            }
+        }
+        
+        .contact .container .rightpanel {
+            width: 45%;
+        }
+        
+        @media (max-width: 768px) {
+            .contact .container .rightpanel {
+                float: none;
+                text-align: center;
+                width: 100%;
+                margin-top: 5px;
+            }
+        }
+        
+        .contact .container .rightpanel__form-quote {
+            height: 450px;
+            padding: 20px;
+            background: #B84D2B;
+            color: #ffffff;
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+        
+        .contact .container .rightpanel__form-quote p {
+            padding-bottom: 15px;
+        }
+        
+        @media (max-width: 768px) {
+            .contact .container .rightpanel__form-quote {
+                height: 450px;
+            }
+            .contact .container .rightpanel__form-quote p {
+                padding-bottom: 15px;
+            }
+        }
+        
+        .contact .container .rightpanel__form-quote input {
+            width: 90%;
+            padding: 5px;
+            color: black;
+        }
+        
+        .contact .container .rightpanel__form-quote textarea {
+            width: 90%;
+            padding: 8px;
+            height: 47px;
+            margin-bottom: 10px;
+            color: black;
+        }
+        
+        .contact .container .button_btn {
+            height: 38px;
+            background: #45526C;
+            border: 0;
+            padding-left: 20px;
+            padding-right: 20px;
+            color: #ffffff;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+        
+        .valid {
+            border: 4px solid green;
+        }
+        
+        .invalid {
+            border: 4px solid red;
+        }
+        
+        #error-message {
+            background: red;
+            color: white;
+            text-align: center;
+            padding: 8px;
+            display: none;
+            width: 200px;
+            margin-top: 3px;
+        }
+        
+        .show {
+            display: block !important;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <!--------------------Contact-------------------->
+    <section class="contact" id="Contact">
+        <div class="contact__heading">
+            <h2>Available for opportunity</h2>
+        </div>
+        <div class="container">
+            <div class="leftpanel">
+                <div class="card">
+                    <p>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Nottingham, England</span><br><br>
+                    </p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2403.7853087208587!2d-1.154338384176373!3d52.95228597989838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4879c22afa210fe5%3A0x2e0e6a269fa170fb!2sAnglo%20Skills%20College!5e0!3m2!1spt-PT!2suk!4v1624953163754!5m2!1spt-PT!2suk"
+                        width="550" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+            <div class="rightpanel">
+
+                <form class="rightpanel__form-quote">
+                    <h3 id="title-Elem">Send an email</h3>
+                    <p id="invitation-Elem">Please drop a message if you would like to find out more about me. I always aim to reply within 24 hours.</p>
+                    <div>
+                        <label class="form-label">Name</label><br>
+                        <input type="text" placeholder="Name" class="form-input">
+                    </div>
+                    <div>
+                        <label class="form-label">Email</label><br>
+                        <input type="Email" placeholder="Email Address" class="form-input">
+                    </div>
+                    <div>
+                        <label class="form-label">Message</label><br>
+                        <textarea class="rightpanel__textarea" placeholder="Message"></textarea>
+                    </div>
+                    <button class="button_btn" type="submit" onclick="handleRegister(event)">Send</button>
+                    <div id="error-message">Oops something is wrong! Please see above...</div>
+                </form>
+
+            </div>
+        </div>
+    </section>
+    <script defer>
+        let titleEl = document.getElementById("title-Elem");
+        titleEl.innerHTML = "Get in touch";
+        let formInputs = document.querySelectorAll(".form-input");
+        let inviteEl = document.getElementById("invitation-Elem");
+        const handleRegister = (event) => {
+            //Stop the form from submitting
+            event.preventDefault();
+            //Display a success if the form valid
+            const errorMsg = document.getElementById("error-message");
+            if (formInputs[0].value && formInputs[1].value) {
+                errorMsg.classList.remove("show");
+                alert("Your email has been received");
+                titleEl.innerHTML = "Thank you for your email";
+                inviteEl.innerHTML = "I will get in touch as soon as possible";
+
+            } else {
+                errorMsg.classList.add("show");
+            }
+
+        };
+        formInputs.forEach((formInput) => {
+            formInput.addEventListener("input", (event) => {
+                let inputValue = event.target.value;
+                if (inputValue != undefined && inputValue.length > 0) {
+                    event.target.classList.remove("invalid");
+                    event.target.classList.add("valid");
+
+                } else {
+                    event.target.classList.remove("valid");
+                    event.target.classList.add("invalid");
+                }
+            });
+
+
+
+        });
+    </script>
+</body>
+
+</html>
