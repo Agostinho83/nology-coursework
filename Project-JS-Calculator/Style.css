@@ -25,6 +25,12 @@ body {
     display: flex;
 }
 
+@media screen and (max-width: 500px) {
+    .right-side {
+        margin-right: 30px;
+    }
+}
+
 .navigation>.right-side>div {
     margin-right: 20px;
     font-size: 0.9em;
@@ -51,6 +57,13 @@ body {
     color: #fafafa;
     border: none;
     font-size: 16px;
+}
+
+@media screen and (max-width: 768px) {
+    .bttn {
+        width: 90px;
+        margin-right: -1px;
+    }
 }
 
 .bttn:hover {
@@ -135,9 +148,15 @@ a:hover {
     box-shadow: 0 0 1px 1px rgba(0, 0, 0, .3)
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 768px) {
     a:hover {
         width: 150px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    a:hover {
+        width: 115px;
     }
 }
 
@@ -145,6 +164,12 @@ ul li:hover a span {
     padding-left: 30%;
     display: block;
     font-size: 15px
+}
+
+@media screen and (max-width: 500px) {
+    ul li:hover a span {
+        font-size: 12px
+    }
 }
 
 
@@ -161,9 +186,17 @@ ul li:hover a span {
     margin-top: 40px;
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 768px) {
     #calculator {
-        margin-right: 35px;
+        margin-right: 200px;
+        margin-top: 80px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #calculator {
+        margin-left: 130px;
+        margin-top: 80px;
     }
 }
 
