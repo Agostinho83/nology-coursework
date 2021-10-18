@@ -392,6 +392,10 @@
                 float: none;
                 width: 50%;
             }
+            @media(max-width: 500px) {
+                float: none;
+                width: 30%;
+            }
             float: left;
             width: 65%;
             margin-top: 10px;
@@ -402,6 +406,9 @@
                 @media(max-width: 768px) {
                     width: 400px;
                     height: 300px;
+                }
+                @media(max-width: 500px) {
+                    width: 380px;
                 }
             }
             &__link {
@@ -425,6 +432,9 @@
                 text-align: justify;
                 width: 100%;
             }
+            @media(max-width: 500px) {
+                width: 80%;
+            }
             p {
                 color: #fff;
             }
@@ -443,6 +453,9 @@
                 text-transform: uppercase;
                 text-align: center;
             }
+            @media(max-width: 500px) {
+                margin-right: 60px;
+            }
         }
         &__boxes {
             float: left;
@@ -454,6 +467,9 @@
                 float: none;
                 text-align: center;
                 width: 100%;
+            }
+            @media(max-width: 500px) {
+                width: 90%;
             }
             h3,
             p {
@@ -483,6 +499,9 @@
                 text-underline-position: below;
                 text-transform: uppercase;
                 text-align: center;
+            }
+            @media(max-width: 500px) {
+                margin-right: 60px;
             }
         }
         .portfolio-item {
@@ -514,6 +533,9 @@
                         float: none;
                         text-align: center;
                         width: 97%;
+                    }
+                    @media screen and (max-width: 500px) {
+                        width: 95%;
                     }
                     &__image {
                         display: block;
@@ -595,16 +617,23 @@
                 text-transform: uppercase;
                 text-align: center;
             }
+            @media screen and (max-width: 500px) {
+                margin-right: 40px;
+            }
         }
         .hobbies-items {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
             overflow: hidden;
             padding-top: 80px;
-            @media(max-width: 768px) {
+            @media screen and (max-width: 768px) {
                 display: grid;
                 grid-template-columns: 1fr;
                 overflow: hidden;
+                margin-left: 17%;
+            }
+            @media screen and (max-width: 500px) {
+                margin-left: 0;
             }
             .hobbies-item {
                 position: relative;
@@ -651,12 +680,18 @@
             text-underline-position: below;
             text-transform: uppercase;
             text-align: center;
+            @media(max-width: 500px) {
+                margin-right: 60px;
+            }
         }
         .text-quote {
             p {
                 padding-top: 6px;
                 margin-bottom: 8px;
                 text-align: justify;
+            }
+            @media screen and (max-width: 500px) {
+                width: 100%;
             }
             &__footer {
                 text-align: center;
@@ -673,8 +708,11 @@
             height: 80px;
             padding: 40px;
             color: rgb(94, 92, 89);
-            @media(max-width: 768px) {
+            @media screen and (max-width: 768px) {
                 padding: 70px;
+            }
+            @media screen and (max-width: 500px) {
+                margin-right: 60px;
             }
             h2 {
                 color: #10940E;
@@ -703,10 +741,17 @@
                         font-weight: 500;
                         line-height: 1.2;
                     }
-                    @media(max-width: 768px) {
+                    @media screen and (max-width: 768px) {
                         iframe {
                             float: none;
-                            width: 453px;
+                            width: 100%;
+                            height: 285px;
+                        }
+                    }
+                    @media screen and (max-width: 500px) {
+                        iframe {
+                            float: none;
+                            width: 100%;
                             height: 285px;
                         }
                     }
@@ -714,9 +759,12 @@
             }
             .rightpanel {
                 width: 40%;
-                @media(max-width: 768px) {
+                @media screen and (max-width: 768px) {
                     float: none;
                     text-align: center;
+                    width: 100%;
+                }
+                @media screen and (max-width: 500px) {
                     width: 100%;
                 }
                 &__form-quote {
@@ -846,7 +894,7 @@
         }
     }
     
-    @media only screen and (min-width: 767px) {
+    @media only screen and (min-width: 768px) {
         .sm-mb-30 {
             margin-bottom: 30px;
         }
