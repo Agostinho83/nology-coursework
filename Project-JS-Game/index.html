@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red diamond</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet " href="https://use.fontawesome.com/releases/v5.8.1/css/all.css ">
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up"  ></i></button>
+    <!---------------------------------HEADER----------------------------------->
+    <header class="navigation">
+        <div class="left-side">
+
+            <a href="index.html" class="logo"><img src="./img/software-icon-32077.png" style="height: 50px; margin-top: -8px;" alt="https://www.freeiconspng.com/downloadimg/32077">T.A.Developer</a>
+
+        </div>
+
+        <div class="right-side">
+            <div class="dropdown" data-dropdown>
+                <button class="bttn link" data-dropdown-button><span class="fas fa-info-circle"></span>Information</button>
+                <div class="dropdown-menu information-grid">
+                    <div>
+                        <div class="dropdown-heading">Free Tutorials</div>
+                        <div class="dropdown-links">
+                            <a href="#" class="link">All</a>
+                            <a href="#" class="link">Latest</a>
+                            <a href="#" class="link">Popular</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="dropdown-heading">Courses</div>
+                        <div class="dropdown-links">
+                            <a href="#" class="link">JavaScript</a>
+                            <a href="#" class="link">CSS</a>
+                            <a href="#" class="link">React</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="dropdown-heading">Blog</div>
+                        <div class="dropdown-links">
+                            <a href="#" class="link">All</a>
+                            <a href="#" class="link">Latest</a>
+                            <a href="#" class="link">Popular</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="dropdown-heading">Other</div>
+                        <div class="dropdown-links">
+                            <a href="#" class="link">Twitter</a>
+                            <a href="#" class="link">Newsletter</a>
+                            <a href="#" class="link">Discord</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dropdown" data-dropdown>
+                <button class="bttn link" data-dropdown-button><span class="fas fa-sign-in-alt"></span>Login</button>
+                <div class="dropdown-menu">
+                    <form class="login-form" id="login-form">
+                        <h1 id="welcome-title">Welcome Back!</h1>
+                        <label for="email">Email<span class="req">*</span></label>
+                        <input class="form-input" type="email" name="email" id="email">
+                        <label for="password">Password<span class="req">*</span></label>
+                        <input class="form-input" type="password" name="password" id="password">
+                        <p class="forgot"><a href="#">Forgot Password?</a></p>
+                        <button class="btn" type="submit">Login</button>
+                        <div id="error-message">Oops something is wrong! Please see above...</div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!---------------------------------INTRO----------------------------------->
+
+    <section class="intro" style="background-image: url(./img/22.jpg);width:auto;">
+        <div class="container">
+
+            <div class="card ">
+                <div class="card-content card-front ">
+                    <img src="./img/Profile.jpg " alt="Profile " />
+                    <span class="card-front--name ">T.A-Tech Asset_Developer</span>
+                    <span class="card-front--set "> &larr;</span>
+
+                </div>
+
+                <div class="card-content card-back ">
+                    <div class="card-body ">
+                        <h3>T.A-Tech Asset_Developer</h3>
+                        <p>I have worked as an Accounts Assistant for 6 years in an Accounts Department for a large company. Flexible attitude to work and follows standard operating procedures. Software development is a booming industry. The search for better
+                            perspectives in life, took me to embark on one of the most exciting adventures of my life. As a student worker, such experience made me acquire independence, autonomy and the ability to face any challenge. I graduated in Business
+                            Management with a Master in Accounting and Finance.</p>
+                        <p><strong>“There is no age limit to learn something new.”</strong>&nbsp;Vishwa Devmurari.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hello">
+                <h1>Hello</h1>
+                <h2>Want to Play?</h2>
+                <a href="#Playhere" class="hello__button ">Play here</a>
+
+            </div>
+        </div>
+
+    </section>
+    <!---------------------------------GAME----------------------------------->
+    <main id="Playhere">
+        <section id="game">
+            <span class="score">0</span>
+            <span class="time">0</span>
+            <span class="start">START!
+                <ol class="high-scores"></ol>
+            </span>
+
+        </section>
+    </main>
+
+
+</body>
+
+</html>
