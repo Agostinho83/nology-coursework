@@ -1,0 +1,16 @@
+{
+    "name": "jest-testing",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "jest"
+    },
+    "keywords": [],
+    "author": "Telmo Agostinho",
+    "license": "ISC",
+    "devDependencies": {
+        "@babel/plugin-transform-modules-commonjs": "^7.16.0",
+        "jest": "^27.3.1"
+    }
+}

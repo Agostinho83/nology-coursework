@@ -1,0 +1,14 @@
+{
+  "name": "npm-lesson",
+  "version": "1.0.0",
+  "description": "a lesson on code reuse and modularity",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Telmo Agostinho",
+  "license": "ISC",
+  "dependencies": {
+    "moment": "^2.29.1"
+  }
+}
