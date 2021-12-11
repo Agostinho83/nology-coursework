@@ -1,0 +1,83 @@
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 'IBM Plex Sans', serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background: -webkit-gradient(linear, left top, right top, from(#2a38fc), to(#ebb94c));
+    background: linear-gradient(to right, #2a38fc, #ebb94c);
+}
+
+.heading {
+    padding: 40px;
+    margin: auto;
+}
+
+.heading_h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 46px;
+    color: #062006;
+    margin: 25px;
+    text-align: center;
+}
+
+.boxzone {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 2% 21%;
+    background: #3a153f;
+    border-radius: 22px;
+    padding: 10vh;
+}
+
+.unwritten {
+    color: #777373;
+    outline: none;
+    border: none;
+    border-radius: 12px;
+    height: 42px;
+    width: 400px;
+    font-size: 18px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .unwritten {
+        width: 250px;
+    }
+}
+
+.btn {
+    color: white;
+    padding: 0 18px;
+    background: #0c9ffa;
+    font-size: 18px;
+    outline: none;
+    border-radius: 12px;
+    height: 42px;
+    width: 250px;
+    margin: 18px 18px;
+    text-align: center;
+}
+
+#outcome {
+    color: white;
+    font-size: 26px;
+}
+
+
+/*# sourceMappingURL=style.css.map */
