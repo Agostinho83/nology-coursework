@@ -3,7 +3,7 @@
 Hostile Aliens is a simple game which has the following Aliens ships:
 * 1 Mother ship;
 * 5 Defense Ship;
-* Attack ship.
+* 8 Attack ship.
 
 In this repo I am going to be looing at:
 
