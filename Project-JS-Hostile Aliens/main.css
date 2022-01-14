@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* background: linear-gradient(to right, #00AAFF, #00FF6C);*/
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    background-image: url(./assets/image/dominik-schroder-FIKD9t5_5zQ-unsplash.jpg);
+}
+
+#spaceShips {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.command {
+    position: absolute;
+    bottom: 0;
+    margin: 0 auto 40px 550px;
+}
+
+@media(max-width:768px) {
+    .command {
+        margin: 0 0 40px 105px;
+    }
+}
+
+.command #form {
+    display: flex;
+    flex-direction: column;
+}
+
+#form input {
+    margin: 5px 0;
+    font-weight: 700;
+}
+
+.command div {
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+}
+
+.command div button {
+    width: 50%;
+    margin-bottom: 20px;
+    margin-left: 65px;
+    font-size: 16px;
+    color: red;
+    font-weight: 700;
+    text-align: center;
+}
+
+.command button {
+    height: 50px;
+    width: 100px;
+    border: 5px solid brown;
+    border-radius: 20px;
+}
+
+@media(max-width:768px) {
+    .command button {
+        height: 30px;
+        width: 60px;
+    }
+}
+
+.command button:hover {
+    background-color: lightblue;
+}
+
+.command #startGame {
+    height: 30px;
+    width: 250px;
+    font-size: 16px;
+    color: green;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 10px;
+}
+
+div {
+    margin: 10px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+div img {
+    height: 85%;
+}
+
+@media(max-width:768px) {
+    div img {
+        height: 40%;
+    }
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}

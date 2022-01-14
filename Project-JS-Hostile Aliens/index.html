@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aliens Game</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js" defer></script>
+</head>
+
+<body onload="buildGame()">
+
+    <section id="spaceShips"></section>
+    <audio id="Alex_Productions" autoplay>
+        <source src="./assets/sound/alex-productions-epic-cinematic-gaming-cyberpunk-reset.mp3" type="audio/mpeg">
+    </audio>
+    <section class="command" id="btn">
+        <div>
+            <button class="shoot" onclick="playAudio()">Open Fire</button>
+        </div>
+        <section id="form">
+            <input type="text" placeholder="Mother" value="1 x Mothership" id="motherShip">
+            <input type="text" placeholder="Attack" value="8 x Attackship" id="attackShip">
+            <input type="text" placeholder="Defence" value="5 x Defenceship" id="defenceShip">
+        </section>
+
+        <button type="submit" name="" id="startGame" onclick="buildGame()">Start Game</button>
+        <audio id="fire" src="./assets/sound/344310__musiclegends__laser-shoot.wav" type="audio/wav"></audio>
+
+    </section>
+
+
+</body>
+
+</html>
